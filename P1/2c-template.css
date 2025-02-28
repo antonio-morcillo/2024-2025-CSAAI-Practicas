@@ -65,13 +65,18 @@ img {
 /* Así conseguimos que el contenido se vea bien en dispositvos móviles */
 
 @media screen and (max-width: 600px) {
-    .columna {
+  .columna {
       width: 100%;
-    }
+      text-align: center;
+  }
 
-    .iresponsive {
-        width: 100%;
-    }
+  .iresponsive img {
+      width: 60%;
+  }
+
+  #c2 img {
+      max-width: 90%;
+  }
 }
 
 /* Más sobre diseño web responsive https://www.w3schools.com/css/css_rwd_intro.asp */
