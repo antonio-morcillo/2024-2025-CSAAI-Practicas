@@ -13,11 +13,11 @@ min-height: 500px;
 }
 
 .izquierda {
-width: 25%;
+width: 30%;
 }
 
 .derecha {
-width: 75%;
+width: 70%;
 }
 
 /* Clear floats despues de las columnas para eliminar la superposición */
@@ -28,11 +28,18 @@ clear: both;
 }
 
 #c1 {
-    background-color:#aaa;
+    background-color:aqua;
 }
-
+#c1 h2 {
+  text-align: center;
+}
+hr {
+  border: none; 
+  height: 4px; 
+  background-color: rgb(0, 0, 0); 
+}
 #c2 {
-    background-color:#bbb;
+    background-color:rgb(235, 93, 193);
 }
 
 /* estilos para imágenes https://www.w3schools.com/css/css3_images.asp */
@@ -42,11 +49,16 @@ img {
     width: 100%;
     height: auto;
 }
+#c2 img {
+    width:900px;
+    height:600px;
+}
 
 .iresponsive {
-    padding: 0 6px;
-    float: left;
-    width: 50%;
+    padding: 0 10px;
+    float: center;
+    width: 100;
+    height: 100;
   }
 
 /* Responsive layout - cuando el ancho de pantalla es menor a 600px, muestra las columnas apiladas. */
