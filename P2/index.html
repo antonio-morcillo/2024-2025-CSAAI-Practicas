@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOM</title>
+    <!-- Hoja de estilo -->
+    <link rel="stylesheet" href="BOOM.css">
+
+    <!-- Código javascript -->
+    <script src="boom.js" defer></script> <!-- Se añadió defer -->
+    <script src="cronometro.js" defer></script>
+</head>
+
+<body>
+  <div id="container">
+    <table>
+      <tr>
+        <td><p class="asterisco" id="n1">*</p></td>
+        <td><p class="asterisco" id="n2">*</p></td>
+        <td><p class="asterisco" id="n3">*</p></td>
+        <td><p class="asterisco" id="n4">*</p></td>
+      </tr>
+      
+      <!-- Nueva línea para mostrar intentos restantes -->
+      <tr>
+        <td colspan="4"><p id="intentos">Intentos restantes: 10</p></td>
+      </tr>
+
+      <tr>
+        <td colspan="4"><p id="display">0:0:0</p></td>
+      </tr>
+      <p id="gameOverMessage" style="display:none;">¡Has perdido! El código era: <span id="codigoCorrecto"></span></p>
+      <tr>
+        <td colspan="4">
+          <div class="button-container">
+            <table>
+              <tr>
+                <td><button type="button" id="boton1" class="numberButton">1</button></td>
+                <td><button type="button" id="boton2" class="numberButton">2</button></td>
+                <td><button type="button" id="boton3" class="numberButton">3</button></td>
+              </tr>
+              <tr>
+                <td><button type="button" id="boton4" class="numberButton">4</button></td>
+                <td><button type="button" id="boton5" class="numberButton">5</button></td>
+                <td><button type="button" id="boton6" class="numberButton">6</button></td>
+              </tr>
+              <tr>
+                <td><button type="button" id="boton7" class="numberButton">7</button></td>
+                <td><button type="button" id="boton8" class="numberButton">8</button></td>
+                <td><button type="button" id="boton9" class="numberButton">9</button></td>
+              </tr>
+              <tr>
+                <td><button type="button" class="numberButton"></button></td>
+                <td><button type="button" id="boton0" class="numberButton">0</button></td>
+                <td><button type="button" class="numberButton"></button></td>
+              </tr>
+              <tr>
+                <td><button type="button" class="numberButton" id="start">Start</button></td>
+                <td><button type="button" class="numberButton" id="stop">Stop</button></td>
+                <td><button type="button" class="numberButton" id="reset">Reset</button></td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
