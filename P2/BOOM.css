@@ -146,14 +146,12 @@ tr:nth-child(even) td {
 /* Media query para pantallas pequeñas */
 @media screen and (max-width: 600px) {
     #container {
-        padding: 10px;
+        padding: 10px; /* Reducir el espaciado interno en pantallas pequeñas */
     }
 
     .numberButton,
     #start,
     #stop,
     #reset {
-        width: 80%;
-        max-width: 90px;
+        width: 45%; /* Ajustar el ancho de los botones en pantallas pequeñas */
     }
-}
