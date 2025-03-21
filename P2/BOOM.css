@@ -154,4 +154,5 @@ tr:nth-child(even) td {
     #stop,
     #reset {
         width: 45%; /* Ajustar el ancho de los botones en pantallas pequeñas */
+       }
     }
