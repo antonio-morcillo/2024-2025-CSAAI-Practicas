@@ -145,14 +145,45 @@ tr:nth-child(even) td {
 
 /* Media query para pantallas pequeñas */
 @media screen and (max-width: 600px) {
+    /* Ajustar contenedor principal */
     #container {
-        padding: 10px; /* Reducir el espaciado interno en pantallas pequeñas */
+        padding: 10px;
+        width: 100%;
     }
 
+    /* Botones más pequeños y adaptativos */
     .numberButton,
     #start,
     #stop,
     #reset {
-        width: 45%; /* Ajustar el ancho de los botones en pantallas pequeñas */
-       }
+        width: 70px; /* Tamaño más reducido */
+        height: 70px;
+        font-size: 14px;
     }
+
+    /* Tabla adaptada */
+    table {
+        width: 100%;
+    }
+
+    td {
+        padding: 10px; 
+        font-size: 16px; 
+    }
+
+    /* Ajustar cronómetro */
+    #display {
+        font-size: 24px; 
+    }
+
+    /* Alineación vertical para todo */
+    .button-container {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    /* Asegurar que la tabla sea legible */
+    .asterisco {
+        font-size: 24px; 
+    }
+}
